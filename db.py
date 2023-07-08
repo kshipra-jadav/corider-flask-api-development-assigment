@@ -8,6 +8,7 @@ HOST = os.getenv("MONGODB_HOST")
 PORT = int(os.getenv("MONGODB_PORT"))
 USERNAME = os.getenv("MONGODB_USERNAME")
 PASSWORD = os.getenv("MONGODB_PASSWORD")
+print(HOST, PORT, USERNAME, PASSWORD)
 
 
 def get_mongo_client(db=None, collection=None):

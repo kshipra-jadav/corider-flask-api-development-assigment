@@ -12,6 +12,12 @@ services:
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=root
 
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on: [mongodb]
+
 volumes:
   coriderdb:
 
